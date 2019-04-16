@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity implements ToneThread.ToneCa
     ProgressBar progress;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,11 +61,8 @@ public class MainActivity extends AppCompatActivity implements ToneThread.ToneCa
 
         progress = (ProgressBar) findViewById(R.id.progress);
 
-<<<<<<< HEAD
         play_tone.setOnClickListener(new View.OnClickListener() {//play_tone 눌렀을 때
-=======
-        play_tone.setOnClickListener(new View.OnClickListener() {
->>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
+
             @Override
             public void onClick(View v) {
 
@@ -85,11 +80,10 @@ public class MainActivity extends AppCompatActivity implements ToneThread.ToneCa
             }
         });
 
-<<<<<<< HEAD
+
         listen_tone.setOnClickListener(new View.OnClickListener() {//listentone 눌렀을 때
-=======
-        listen_tone.setOnClickListener(new View.OnClickListener() {
->>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
+
+
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "Listen Start!", Toast.LENGTH_SHORT).show();
@@ -99,11 +93,9 @@ public class MainActivity extends AppCompatActivity implements ToneThread.ToneCa
     }
 
     public void receiveMessage(){
-<<<<<<< HEAD
-        //메세지 받는 함수 --> 여기서 Listentone에 대한 객체 생성해서 PreRequest 함수 실행
-=======
 
->>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
+        //메세지 받는 함수 --> 여기서 Listentone에 대한 객체 생성해서 PreRequest 함수 실행
+
         Thread receive = new Thread(new Runnable() {
 
             Listentone recv_tone = new Listentone();
@@ -157,14 +149,12 @@ public class MainActivity extends AppCompatActivity implements ToneThread.ToneCa
 
       //  }
 
-<<<<<<< HEAD
-    }
-
-=======
-
 
     }
->>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
+
+
+
+
     private void requestAudioPermissions(){
         if (ContextCompat.checkSelfPermission(this,
                 Manifest.permission.RECORD_AUDIO)
