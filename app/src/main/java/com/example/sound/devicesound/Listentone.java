@@ -144,7 +144,7 @@ public class Listentone {
                 next_read_bit -= chunk_bits;
             }
         }
-    return out_bytes;
+        return out_bytes;
     }
 
     public List<Integer> extract_packet(List<Double> freqs){
