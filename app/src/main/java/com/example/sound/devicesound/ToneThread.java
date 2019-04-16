@@ -4,7 +4,11 @@ import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.util.Log;
+<<<<<<< HEAD
 // 각 음정의 톤이 저장되어 있음
+=======
+
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
 public class ToneThread extends Thread {
     public interface ToneCallback {
         public void onProgress(int current, int total);

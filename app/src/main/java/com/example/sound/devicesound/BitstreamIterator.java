@@ -5,7 +5,11 @@ import android.util.Log;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
+<<<<<<< HEAD
 // 글자를 쪼개서 배열에 저장
+=======
+
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
 public class BitstreamIterator implements Iterable<Integer> {
     final InputStream stream;
     final int bits;

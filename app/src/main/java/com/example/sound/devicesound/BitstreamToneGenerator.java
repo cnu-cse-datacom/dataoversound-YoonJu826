@@ -4,7 +4,11 @@ import android.util.Log;
 
 import java.io.InputStream;
 import java.util.Iterator;
+<<<<<<< HEAD
 // 입력받은 글자에 따라서 소리의 음정을 다르게 설정
+=======
+
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
 public class BitstreamToneGenerator implements ToneThread.ToneIterator {
     final static int START_HZ = 1024;
     final static int STEP_HZ = 256;

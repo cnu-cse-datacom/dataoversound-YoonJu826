@@ -5,6 +5,7 @@ import android.media.AudioRecord;
 import android.media.MediaRecorder;
 import android.util.Log;
 
+<<<<<<< HEAD
 import static java.lang.Math.abs;
 
 import java.util.ArrayList;
@@ -13,6 +14,13 @@ import java.util.List;
 import org.apache.commons.math3.complex.Complex;
 import org.apache.commons.math3.transform.*;
 
+=======
+import org.apache.commons.math3.complex.Complex;
+import org.apache.commons.math3.transform.*;
+
+import java.util.ArrayList;
+
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
 public class Listentone {
 
     int HANDSHAKE_START_HZ = 4096;
@@ -37,11 +45,18 @@ public class Listentone {
     boolean startFlag;
     FastFourierTransformer transform;
 
+<<<<<<< HEAD
     public Listentone(){
+=======
+
+    public Listentone(){
+
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
         transform = new FastFourierTransformer(DftNormalization.STANDARD);
         startFlag = false;
         mAudioRecord = new AudioRecord(mAudioSource, mSampleRate, mChannelCount, mAudioFormat, mBufferSize);
         mAudioRecord.startRecording();
+<<<<<<< HEAD
     }
 
     private int findPowerSize(int round) {
@@ -210,3 +225,15 @@ public class Listentone {
     }
 }
 
+=======
+
+
+
+
+    }
+
+
+
+
+}
+>>>>>>> fe2928108c9288e087fbdf1fdb39efe5bd0b8fce
